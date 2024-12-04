@@ -29,6 +29,7 @@ const Register = () => {
     const data=await resp.json();
     console.log(data)
     if(data.success){
+      localStorage.setItem("token", data.data.refreshToken);
       alert(data.message)
       console.log(data.data.refreshToken)
       navigate('/')

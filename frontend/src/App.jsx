@@ -6,7 +6,8 @@ import Cart from './Components/Pages/Cart/Cart'
 import PlaceOrder from './Components/Pages/PlaceOrder/PlaceOrder'
 import Login from './Components/Pages/Login/Login'
 import Register from './Components/Pages/Register/Register'
-import FoodItems from "./Components/FoodItems/FoodItems";
+import FoodDisplay from './Components/FoodDisplay/FoodDisplay'
+// import FoodItems from "./Components/FoodItems/FoodItems";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
-        <Route path='/foodItem' element={<FoodItems/>}/>
+        <Route path='/menu' element={<FoodDisplay/>}/>
+        {/* <Route path='/foodItem' element={<FoodItems/>}/> */}
 
       </Routes>
     </div>
